@@ -2,7 +2,9 @@ name: Update group publications
 
 on:
   workflow_dispatch:
-
+  schedule:
+    - cron: '0 11 * * 1'   # ~6:00 AM Eastern (adjusts to 7 AM during EDT)
+    
 permissions:
   contents: write
 
